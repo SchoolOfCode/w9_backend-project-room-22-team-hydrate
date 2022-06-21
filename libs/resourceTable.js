@@ -1,4 +1,4 @@
-export const resourcesTable = [
+export const resourceTable = [
     {
         id: 1,
         topic: "CSS",
@@ -87,86 +87,86 @@ export const resourcesTable = [
         id: 13,
         topic: "React",
         video_link: "https://www.youtube.com/watch?v=hQAHSlTtcmY",
-        doc_link: null,
+        docs_link: null,
         description: "This video covers create-react-app, components, state, props, rendering, event handling, and so much more.",
     },
     {
         id: 14,
         topic: "React",
         video_link: "https://www.youtube.com/watch?v=Ke90Tje7VS0",
-        doc_link: null,
+        docs_link: null,
         description: "This video provides the introduction to react where you learn what react is, setting up a react app and rendering lists.",
     },
     {
         id: 15,
         topic: "React",
         video_link: "https://www.youtube.com/watch?v=w7ejDZ8SWv8",
-        doc_link: null,
+        docs_link: null,
         description: "This video will be building a task tracker app and look at components, props, state, hooks, working with an API and more.",
     },
     {
         id: 16,
         topic: "React",
         video_link: null,
-        doc_link: "https://www.w3schools.com/react/react_components.asp",
+        docs_link: "https://www.w3schools.com/react/react_components.asp",
         description: "This document teaches individual about react components.",
     },
     {
         id: 17,
         topic: "React",
         video_link: null,
-        doc_link: "https://www.w3schools.com/react/react_props.asp",
+        docs_link: "https://www.w3schools.com/react/react_props.asp",
         description: "This document teaches individual about react props.",
     },
     {
         id: 18,
         topic: "React",
         video_link: null,
-        doc_link: "https://www.w3schools.com/react/react_jsx.asp",
+        docs_link: "https://www.w3schools.com/react/react_jsx.asp",
         description: "This document teaches individual about react JSX.",
     },
     {
         id: 19,
         topic: "UX/UI",
         video_link: "https://www.youtube.com/watch?v=TgqeRTwZvIo",
-        doc_link: null,
+        docs_link: null,
         description: "This video explains the difference between UX and UI.",
     },
     {
         id: 20,
         topic: "UX/UI",
         video_link: "https://www.youtube.com/watch?v=FTFaQWZBqQ8",
-        doc_link: null,
+        docs_link: null,
         description: "This video shows you how to get started with Figma (a useful tool for creating high fidelity wireframes).",
     },
     {
         id: 21,
         topic: "UX/UI",
         video_link: "https://www.youtube.com/watch?v=pULLAEmhSho",
-        doc_link: null,
+        docs_link: null,
         description: "This video teaches you the basics on how to get started with Miro (a useful tool for creating low fidelity wireframes).",
     },
     {
         id: 22,
         topic: "UX/UI",
         video_link: null,
-        doc_link: "https://www.hubspot.com/make-my-persona",
+        docs_link: "https://www.hubspot.com/make-my-persona",
         description: "This is HubSpot! A great tool for creating user personas and user stories.",
     },
     {
         id: 23,
         topic: "UX/UI",
         video_link: null,
-        doc_link: "https://careerfoundry.com/en/blog/ux-design/the-difference-between-ux-and-ui-design-a-laymans-guide/",
+        docs_link: "https://careerfoundry.com/en/blog/ux-design/the-difference-between-ux-and-ui-design-a-laymans-guide/",
         description: "This is a beginners guide to UX/UI and the difference between the two.",
     },
     {
         id: 24,
         topic: "UX/UI",
         video_link: null,
-        doc_link: "https://www.behance.net/galleries/ui-ux/ui-ux",
+        docs_link: "https://www.behance.net/galleries/ui-ux/ui-ux",
         description: "This is a documentation on on you to build a good UX.",
     }
 ];
   
-export default superLeague;
+export default resourceTable;

@@ -1,16 +1,16 @@
-import {query} from "../index.js";
-import {resourcesTable} from "../../libs/resrouceTable.js";
+import { query } from "../index.js";
+import { resourceTable } from "../../libs/resourceTable.js";
 
-async function populateTable(){
-    for(let i=0; i<resourcesTable.length; i++){
-    const result = await query(
-        `INSERT INTO resources(topic, video_link, docs_link, description) 
-        VALUES ($1, $2, $3, $4)
-        RETURNING *;`,
-        [cats[i].name, cats[i].human, cats[i].hobby]
-    );
-    console.log("Our table has been populated with cats!")
-    console.log(result.rows[0].name)
-}
-}
-populateTable();
+async function populateResourceTable() {
+    for (let i=0; i< resourceTable.length; i++)  {
+        const res = await query(
+            `INSERT INTO resourceTable (topic, video_link, docs_link, description)
+            VALUES ($1, $2, $3, $4);`,
+            [resourceTable[i].topic, resourceTable[i].video_link, resourceTable[i].docs_link, resourceTable[i].description]
+       );
+       console.log(`populate with ${resourceTable[i].topic}`);
+    
+    }
+    }
+
+populateResourceTable();
