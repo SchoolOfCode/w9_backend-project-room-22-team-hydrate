@@ -1,14 +1,14 @@
 import { query } from "../index.js";
-import { resourceTable } from "../../libs/resourceTable.js";
+import { resources } from "../../libs/resources.js";
 
 async function populateResourceTable() {
-    for (let i=0; i< resourceTable.length; i++)  {
+    for (let i=0; i< resources.length; i++)  {
         const res = await query(
-            `INSERT INTO resourceTable (topic, video_link, docs_link, description)
+            `INSERT INTO resources (topic, video_link, docs_link, description)
             VALUES ($1, $2, $3, $4);`,
-            [resourceTable[i].topic, resourceTable[i].video_link, resourceTable[i].docs_link, resourceTable[i].description]
+            [resources[i].topic, resources[i].video_link, resources[i].docs_link, resources[i].description]
        );
-       console.log(`populate with ${resourceTable[i].topic}`);
+       console.log(`populate with ${resources[i].topic}`);
     
     }
     }

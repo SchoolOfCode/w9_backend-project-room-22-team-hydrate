@@ -1,4 +1,4 @@
-export const resourceTable = [
+export const resources = [
     {
         id: 1,
         topic: "CSS",
@@ -169,4 +169,4 @@ export const resourceTable = [
     }
 ];
   
-export default resourceTable;
+export default resources;
