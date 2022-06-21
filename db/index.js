@@ -1,6 +1,6 @@
 import pg from "pg";
 
-export const pool = new pg.Pool({
+const pool = new pg.Pool({
   user: process.env.PGUSER,
   host: process.env.PGHOST,
   database: process.env.PGDATABASE,
@@ -12,5 +12,3 @@ export const pool = new pg.Pool({
 export function query(text, params, callback) {
     return pool.query(text, params, callback);
 }
-
-export default pool;
