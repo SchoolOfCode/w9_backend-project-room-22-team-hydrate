@@ -3,6 +3,7 @@ import resourcesRoute from './routes/resources.js';
 const app = express();
 const PORT = process.env.port || 3000;
 
+app.use(express.json());
 // test route
 app.get("/", function (req, res) {
   res.json({
@@ -11,9 +12,10 @@ app.get("/", function (req, res) {
   });
 });
 
+app.use('/resources', resourcesRoute);
+
+
 app.listen(PORT, function () {
   console.log(`Server is running on port ${PORT}`);
 });
 
-app.use('/resources', resourcesRoute);
-app.use(express.json());
