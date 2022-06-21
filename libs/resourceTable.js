@@ -1,4 +1,4 @@
-export const superLeague = [
+export const resourcesTable = [
     {
         id: 1,
         topic: "CSS",
