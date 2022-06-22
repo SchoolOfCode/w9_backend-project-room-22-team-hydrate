@@ -24,7 +24,7 @@ resourcesRoute.get("/:id", async function(req, res) {
     const resourcesID = req.params.id;
     console.log(resourcesID)
     let resources = await getCSSResources (resourcesID)
-                     
+                        
             const resourcesIdObject = {
             success: true,
             payload: resources,
