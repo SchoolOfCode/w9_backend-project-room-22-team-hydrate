@@ -9,6 +9,6 @@ const pool = new pg.Pool({
   ssl: { rejectUnauthorized: false },
 });
 
-export function query(text, params, callback) {
-    return pool.query(text, params, callback);
+export function query(text, params, callback) { 
+  return pool.query(text, params, callback);
 }

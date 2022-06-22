@@ -1,7 +1,7 @@
 import { query } from "../index.js";
 import { resources } from "../../libs/resources.js";
 
-async function populateResourceTable() {
+async function populateResourcesTable() {
     for (let i=0; i< resources.length; i++)  {
         const res = await query(
             `INSERT INTO resources (topic, video_link, docs_link, description)
@@ -13,4 +13,4 @@ async function populateResourceTable() {
     }
     }
 
-populateResourceTable();
+populateResourcesTable();
