@@ -1,32 +1,33 @@
 import express from 'express';
-import resources from '../libs/resources.js';
+//import resources from '../libs/resources.js';
+import { getCSSResources, getResources } from '../models/resources.js';
 const resourcesRoute = express.Router();
 
 
-resourcesRoute.get('/', function (req, res){
+resourcesRoute.get('/', async function (req, res){
+    console.log(req.query)
+    if(req.query){
+        let cssQuery = await getCSSResources(req.query) 
+    }
+    let allResources =  await getResources ()
+    console.log(allResources)
+    
     const resourcesObject = {
     success: Boolean, 
-    payload: resources
+    payload: allResources
 };
 
 res.json(resourcesObject);
 })
 
-resourcesRoute.get("/:id", function(req, res) {
+resourcesRoute.get("/:id", async function(req, res) {
     const resourcesID = req.params.id;
-    let searchResult = [];
-
-     for(var i = 0; i < resourcesRoute.length; i++){
-            if(resourcesID == resources[i].id){
-                searchResult = resources[i];
-                break;
-            }
-        }
-
-                              
+    console.log(resourcesID)
+    let resources = await getCSSResources (resourcesID)
+                     
             const resourcesIdObject = {
             success: true,
-            payload: searchResult,
+            payload: resources,
         }
 
         res.json(resourcesIdObject);  
