@@ -14,7 +14,7 @@ Bootcamp Booster is our solution for providing curated resources to bootcampers 
 
 ## Documentation
 
-[Documentation](https://github.com/SchoolOfCode/w9_frontend-project-room-22-team-hydrate/blob/main/DOCUMENTATION.md)
+[Documentation](https://github.com/SchoolOfCode/w9_backend-project-room-22-team-hydrate/blob/main/DOCUMENTATION.md)
 
 ## Lessons Learned
 
