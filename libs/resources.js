@@ -1,4 +1,4 @@
-// This is the content for the table we created for our backend and has all the information need for the table
+// This is the content for the table we created for our backend and has all the information need for the table.
 
 export const resources = [
     {
