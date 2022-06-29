@@ -1,5 +1,7 @@
 import pg from "pg";
 
+// This links our heroku databse to our code in the script folder
+
 const pool = new pg.Pool({
   user: process.env.PGUSER,
   host: process.env.PGHOST,

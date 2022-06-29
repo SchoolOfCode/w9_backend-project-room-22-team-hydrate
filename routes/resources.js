@@ -1,29 +1,12 @@
 import express from 'express';
-//import resources from '../libs/resources.js';
-import { getCSSResources, getResources } from '../models/resources.js';
+import { getTopicResources } from '../models/resources.js';
 const resourcesRoute = express.Router();
 
-
-resourcesRoute.get('/', async function (req, res){
-    console.log(req.query)
-    if(req.query){
-        let cssQuery = await getCSSResources(req.query) 
-    }
-    let allResources =  await getResources ()
-    console.log(allResources)
-    
-    const resourcesObject = {
-    success: Boolean, 
-    payload: allResources
-};
-
-res.json(resourcesObject);
-})
-
+// this is for the / e.g. /html which will show the specific topic pages
 resourcesRoute.get("/:id", async function(req, res) {
     const resourcesID = req.params.id;
     console.log(resourcesID)
-    let resources = await getCSSResources (resourcesID)
+    let resources = await getTopicResources(resourcesID)
                         
             const resourcesIdObject = {
             success: true,
