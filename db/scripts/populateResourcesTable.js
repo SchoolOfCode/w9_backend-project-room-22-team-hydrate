@@ -1,8 +1,6 @@
 import { query } from "../index.js";
 import { resources } from "../../libs/resources.js";
 
-// This show code assist when populating the table on to heroku
-
 async function populateResourcesTable() {
     for (let i=0; i< resources.length; i++)  {
         const res = await query(

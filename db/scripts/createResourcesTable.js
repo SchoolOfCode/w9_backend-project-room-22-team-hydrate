@@ -1,7 +1,5 @@
 import { query } from "../index.js";
 
-// This is for the table to be created with the info as to what will appear in the database
-
 const sqlString = `CREATE TABLE IF NOT EXISTS resources 
 (resources_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY, 
     topic TEXT, 
