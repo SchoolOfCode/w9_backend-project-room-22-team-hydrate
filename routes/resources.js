@@ -1,6 +1,6 @@
 import express from 'express';
 //import resources from '../libs/resources.js';
-import { getCSSResources, getResources } from '../models/resources.js';
+import { getResources, getCSSResources} from '../models/resources.js';
 const resourcesRoute = express.Router();
 
 
